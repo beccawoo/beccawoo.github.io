@@ -4,30 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
   <style>
-    a {
-      display: block;
-      position: relative;
-      padding: 0.2em 0;
-    }
-    
-    a::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.1em;
-      background-color: #262F34;
-      opacity: 0;
-      transition: opacity 300ms, transform 300ms;
-    }
-    
-    a:hover::after,
-    a:focus::after {
-      opacity: 1;
-      transform: translate3d(0, 0.2em, 0);
-    }
-
     ul {
       list-style-type: none;
       margin: 0;
@@ -36,6 +12,9 @@
     }
     
     li a {
+      display: block;
+      position: relative;
+      padding: 0.2em 0;
       display: inline-block;
       color: black;
       font-family: Exo;
@@ -47,6 +26,15 @@
     }
     
     li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.1em;
+      background-color: #262F34;
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
       opacity 1;
       transform: scale(0);
       transform-origin: center;
@@ -54,6 +42,8 @@
     
     li a:hover::after,
     li a:focus::after{
+      opacity: 1;
+      transform: translate3d(0, 0.2em, 0);
       transform: scale(1);
     }
   </style>
@@ -80,8 +70,10 @@
 <!--       </div> -->
     </div>
       <div style="left: 50px; top: 169px; position: absolute; color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">UX Designer centered on empathy, lifelong learning, and accessibility</div>
-      <a href="sat-portal.html"><img style="width: 380px; height: 380px; left: 50px; top: 257px; position: absolute" src="https://beccawoo.github.io/images/card_sat-portal.png" /></a>
-      <a href="connect2grow.html"><img style="width: 380px; height: 380px; left: 450px; top: 257px; position: absolute" src="https://beccawoo.github.io/images/card_connect2grow.png" /></a>
-      <a href="fileflora.html"><img style="width: 380px; height: 380px; left: 850px; top: 257px; position: absolute" src="https://beccawoo.github.io/images/card_fileflora.png" /></a>
+      <div style="position: relative; top: 120px; align-items: center">
+      <a style="padding: 10px" href="sat-portal.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_sat-portal.png" /></a>
+      <a style="padding: 10px" href="connect2grow.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_connect2grow.png" /></a>
+      <a style="padding: 10px" href="fileflora.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_fileflora.png" /></a>
+      </div>
   </div>
 </body>
