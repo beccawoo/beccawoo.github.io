@@ -1,0 +1,11 @@
+// configuration file for ehtmlc.exe
+Config(
+    // the folder into which to generate html files
+    target: "docs",
+    // the folder from which to read html and ehtml files
+    src: "src",
+    // whether only ehtml files should be affected or both ehtml and html
+    only_ehtml: false,
+    // which ehtml extensions to use
+    extensions: [Include,],
+)
