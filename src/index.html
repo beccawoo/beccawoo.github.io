@@ -1,35 +1,61 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
     <title>Homepage - Becca Woo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
-    <style>
-      img {
-          max-width: 100%;
-          height: auto;
-          width: auto\9;
-      }
-    </style>
-    <link href='./include/header.css' rel='stylesheet'>
+    <link href='/include/header.css' rel='stylesheet'>
+    <link href='/include/footer.css' rel='stylesheet'>
+    <link href='/content.css' rel='stylesheet'>
   </head>
-  <body style = "margin:0">
-    <div style="width: 100%; height: 100%; position: absolute; background: white">
-        <include "include/header.html">
-        <div style="left: auto; top: 169px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left">
-        <div style="width: 1180; color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">UX Designer centered on empathy, lifelong learning, and accessibility</div>
-            <div style="top: 45px; width: 1180; position: absolute; color: black; font-size: 18px; font-family: Exo; font-weight: 400; word-wrap: break-word">* Please note that the mobile view is still in development. For best view, please use desktop! Sorry for the inconvenience.</div>
-        </div>
-          <div style="left: auto; top: 657px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: center">
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/type-persona.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_type-persona.png" /></a></div>
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/fcc-microsite.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_fcc-microsite.png" /></a></div>
-            <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/genre-analysis.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_genre-analysis.png" /></a></div>
-        </div>
-        <div style="left: auto; top: 257px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: center">
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/sat-portal.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_sat-portal.png" /></a></div>
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/magazine-ad.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_magazine-ad.png" /></a></div>
-            <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="case-study/connect2grow.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_connect2grow.png" /></a></div>
-        </div>
+  <body>
+    <script src="/util.js"></script>
+    <include "include/header.html">
+    <div class="content">
+      <span class="bolded">UX Designer centered on empathetic design, lifelong learning, and accessibility</span>
+      <br style="display: block; margin-top: 4.69cqw">
+      View my work below:
+      <br style="display: block; margin-top: 1.56cqw">
+      <div class="cardGrid">
+        <a class="card" href="/">
+          <img src="/images/face_48x48.png">
+          <br style="display: block; margin-top: 0.78cqw">
+          <span class="project">SAT Portal</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="position">UX Designer</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="date">April 2023-April 2024</span>
+        </a>
+        <a class="card" href="/">
+          <img src="/images/face_48x48.png">
+          <br style="display: block; margin-top: 0.78cqw">
+          <span class="project">SAT Portal</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="position">UX Designer</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="date">April 2023-April 2024</span>
+        </a>
+        <a class="card" href="/">
+          <img src="/images/face_48x48.png">
+          <br style="display: block; margin-top: 0.78cqw">
+          <span class="project">SAT Portal</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="position">UX Designer</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="date">April 2023-April 2024</span>
+        </a>
+        <a class="card" href="/">
+          <img src="/images/face_48x48.png">
+          <br style="display: block; margin-top: 0.78cqw">
+          <span class="project">SAT Portal</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="position">UX Designer</span>
+          <br style="display: block; margin-top: 0.469cqw">
+          <span class="date">April 2023-April 2024</span>
+        </a>
+      </div>
     </div>
+    <include "include/footer.html">
   </body>
 </html>

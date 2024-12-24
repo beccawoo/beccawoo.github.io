@@ -7,6 +7,7 @@ header {
   align-content: center;
   padding-top: 5.5cqh;
   padding-bottom: 5.5cqh;
+  z-index: 999;
 }
 
 #headerImgLink {

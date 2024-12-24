@@ -11,3 +11,13 @@ function getScreenSize() {
         return { width: body.clientWidth, height: body.clientHeight }; 
     }
 }
+
+function isMobile() {
+    var screenSize = getScreenSize();
+    return screenSize.width < 856;
+    // screenSize.width < screenSize.height
+}
+
+function resumeLink() {
+    return "/Becca_Woo-Resume-March_2024.pdf";
+}

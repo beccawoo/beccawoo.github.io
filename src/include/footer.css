@@ -1,0 +1,17 @@
+.footer {
+  padding-bottom: 3.12cqw;
+  z-index: 999;
+  background: white;
+}
+
+.footerItems {
+  left: 5.65%;
+  position: relative;
+}
+
+.footerItems a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 1.56cqw;
+}
