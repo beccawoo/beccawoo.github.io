@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-    <title>Homepage - Becca Woo</title>
+    <title>PAGE_TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
     <link href='/include/header.css' rel='stylesheet'>
     <link href='/include/footer.css' rel='stylesheet'>
     <link href='/content.css' rel='stylesheet'>
@@ -78,12 +79,27 @@ if (isMobile()) {
 
 
     <div class="content">
-      <span class="bolded">UX Designer and Technical Writer centered on empathetic design, lifelong learning, and accessibility</span>
-      <br style="display: block; margin-top: 4.69cqw">
-      View my work below:
-      <br style="display: block; margin-top: 1.56cqw">
-      <div class="cardGrid" id="cardGrid">
+      <div style="display: flex; gap: 3.12cqw">
+        <div>
+          <h2>TITLE</h2>
+          Company, Duration
+          <br><br>
+          Description describes the describee descriptively.
+          <ul>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <!-- continue adding bullet points as necessary... -->
+          </ul>
+          <br>
+          <a class="mainCTA" href="https://yourlinkhere.com/thisisyourlink" target="_blank" rel="noopener noreferrer">Full Case Study<img src="/images/open-in-new.svg"></a>
+        </div>
+        <img style="min-width: 29.69cqw; height: auto;" src="/images/picture.png">
       </div>
+      <br style="display: block; margin-top: 7.8cqw">
+      <span class="bolded">Take a look at other work I've done! (You can scroll this &rarr;)</span>
+      <br><br>
+      <div class="cardCarousel" id="cardCarousel"></div>
     </div>
     <div class="footer" id="fullFooter">
   <hr>
@@ -163,7 +179,7 @@ if (isMobile()) {
 })()
 </script>
 
-    <script>createGrid()</script>
+    <script>createCarousel()</script>
     <script>mobileCards()</script>
   </body>
 </html>

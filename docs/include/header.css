@@ -1,0 +1,84 @@
+header {
+  position: sticky; 
+  left: 0px; 
+  top: 0px; 
+  width: 100%; 
+  background: #D3EEE1; 
+  align-content: center;
+  padding-top: 5.5cqh;
+  padding-bottom: 5.5cqh;
+  z-index: 999;
+}
+
+#headerImgLink {
+  width: 19.2%
+}
+
+#menuDropdown {
+  background: #D3EEE1; 
+}
+
+.home {
+  left: 4.5%; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 8%; 
+  display: inline-flex; 
+  position: relative; 
+  width: 19.5%
+}
+
+.buttonLink {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  color: black;
+  font-family: Exo;
+  font-size: 1.87cqw;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.buttonLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #262F34;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.buttonLink:hover::after,
+.buttonLink:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.buttonBox {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topButton {
+  display: inline-block;
+}
+
+.topButton .buttonLink::after {
+  opacity: 1;
+  transform: scale(var(--selected));
+  transform-origin: center;
+}
+
+.topButton .buttonLink:hover::after,
+.topButton .buttonLink:focus::after{
+  transform: scale(1);
+}

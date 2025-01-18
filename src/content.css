@@ -1,0 +1,107 @@
+body {
+  color: black;
+  font-family: Exo;
+  font-weight: 400;
+  font-size: 1.4cqw;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8cqw;
+}
+
+h2 {
+  font-size: 1.9cqw;
+}
+
+.body-small {
+  font-size: 1.25cqw;
+}
+
+.bolded {
+  font-weight: 800;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+  
+.mainCTA {
+  width: 21.875cqw;
+  height: 4.375cqw;
+  position: relative;
+  background: #262F34; 
+  border-radius: 4px; 
+  overflow: hidden; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: inline-flex;
+  color: white; 
+  font-size: 1.4cqw; 
+  font-family: Exo; 
+  font-weight: 700; 
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 3.12cqw;
+  padding-bottom: 7.81cqw;
+  position: relative;
+  left: 4.5%;
+  width: 91%;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 3.12cqw 3.12cqw;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+}
+
+.cardCarousel {
+  display: flex;
+  gap: 3.12cqw;
+  overflow: scroll;
+  justify-content: space-between;
+}
+
+.cardCarousel .card {
+  width: 21.88cqw;
+  min-width: 21.88cqw;
+}
+
+.card {
+  color: black;
+  text-decoration: none;
+  width: 28.25cqw;
+  min-width: 28.25cqw;
+  height: 30.5cqw;
+  border: 1px solid #262F34;
+}
+
+.card img {
+  width: 100%;
+  height: 21.25cqw;
+}
+
+.card .project {
+  position: relative;
+  left: 4.7%;
+  font-size: 1.87cqw;
+}
+
+.card .position {
+  position: relative;
+  left: 4.7%;
+}
+
+.card .date {
+  position: relative;
+  left: 4.7%;
+  font-style: italic;
+}

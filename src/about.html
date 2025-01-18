@@ -1,49 +1,93 @@
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <title>About - Becca Woo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
-<include "include/header-style.html">
-</head>
-<body style="margin: 0">
-    <include "include/header.html">
-    <div style="left: auto; top: 184px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px">
-    <div style="width: 480px; display: inline-block">
-        <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">I am a UX designer in the Bay Area of California, focused on empathetic design through education.</span></p>
-        <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">I am currently most excited to learn more about </span><span style="color: #375937; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">accessible tools, interaction design</span><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">, and how we can continue to improve to ensure that every person is seen.</span></p>
-        <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">My main goal for my career is to improve the lives of others by designing for accessibility, whether that is through a project that I am adding accessibility to or a project entirely focused on it. There are so many people excluded that need empathetic advocacy, and I aspire to be one of those voices.</span></p>
-        <a style="position: relative; left: 100; width: 280px; height: 56px" href="about-tldr.html">
-            <div style="width: 280px; padding-top: 16px; padding-bottom: 16px; background: #262F34; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                <div style="color: white; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Full Story</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+      <title>About - Becca Woo</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
+      <link href='./include/header.css' rel='stylesheet'>
+      <link href='./include/footer.css' rel='stylesheet'>
+      <link href='./content.css' rel='stylesheet'>
+    </head>
+    <body style="margin: 0">
+        <script src="./util.js"></script>
+        <include "include/header.html">
+        <div class="content">
+            <div style="display: flex; gap: 3.12cqw">
+            <div style="width: 58.19cqw">
+            I am a UX designer in the Bay Area of California, focused on empathetic design through education.
+            <br><br>
+            I am currently most excited to learn more about <span class="bolded" style="color: #375937">accessible tools, interaction design</span>, and how we can continue to improve to ensure that every person is seen.
+            <br><br>
+            My main goal for my career is to improve the lives of others by designing for accessibility, whether that is through a project that I am adding accessibility to or a project entirely focused on it. There are so many people excluded that need empathetic advocacy, and I aspire to be one of those voices.
+            <br><br>
+            <a class="mainCTA" href="/about-tldr.html">Full Story</a>
             </div>
-        </a>
-
-    </div>
-    <img style="width: 380px; height: 361px; padding-left: 9%" src="https://beccawoo.github.io/images/about_picture.png" />
-    </div>
-
-
-    <div style="left: auto; top: 184px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px">
-    <div style="top: 547; position: relative; width: 996px; color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Here’s what I’m up to in my free time...</div>
-    <div style="left: 0px; top: 0.39px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-    </div>
-    <div style="left: auto; top: 586px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center">
-    <div style="left: 150px; top: 756px; justify-content: flex-start; align-items: flex-start; gap: 69px; display: inline-flex">
-        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
-            <img style="width: 322px; height: 266px" src="https://beccawoo.github.io/images/life_in_the_reef.jfif" />
-            <div style="width: 322px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">“Life in the Reef” - Notan-style</div>
-            <a style="text-decoration: none" href="life-in-the-reef.html"><div style="width: 322px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; text-decoration: underline; word-wrap: break-word">See more here!</div></a>
+            <img style="width: 29.69cqw; height: auto;" src="/images/about_picture.png">
+            </div>
+            <br style="display: block; margin-top: 7.8cqw">
+            <span class="bolded">Here's what I'm up to in my free time...</span>
+            <br><br>
+            <div class="cardCarousel">
+                <a class="card" href="/life-in-the-reef.html" style="border: 0; height: fit-content;">
+                  <img src="/images/life_in_the_reef.jfif">
+                  <br>
+                  "Life in the Reef" - Notan-style artwork
+                  <br>
+                  <span style="text-decoration: underline;">Read more about "Life in the Reef"</span>
+                </a>
+                <div class="card" style="border: 0; height: fit-content;">
+                  <img src="/images/faye.png">
+                  <br>
+                  My chinchilla Faye is a sassy lady who adores her playtime.
+                </div>
+                <div class="card" style="border: 0; height: fit-content;">
+                  <img src="/images/hibiscus.png">
+                  <br>
+                  This is a hibiscus I drew from my digital art unit!
+                </div>
+            </div>
         </div>
-        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-            <img style="width: 280px; height: 266px" src="https://beccawoo.github.io/images/faye.png" />
-            <div style="width: 280px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">My chinchilla Faye is a sassy lady who adores her playtime.</div>
-        </div>
-        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-            <img style="width: 241px; height: 266px" src="https://beccawoo.github.io/images/hibiscus.png" />
-            <div style="width: 238px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">This is a hibiscus I drew from my digital art unit!</div>
-        </div>
-    </div>
-    </div>
-</div>
-</body>
+        <!-- <div style="left: auto; top: 184px; width: 100%; margin-left: auto; margin-right: auto; position: relative; display: flex; justify-content: center; text-align: left; gap: 20px"> -->
+        <!-- <div style="width: 480px; display: inline-block"> -->
+            <!-- <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">I am a UX designer in the Bay Area of California, focused on empathetic design through education.</span></p> -->
+            <!-- <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">I am currently most excited to learn more about </span><span style="color: #375937; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">accessible tools, interaction design</span><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">, and how we can continue to improve to ensure that every person is seen.</span></p> -->
+            <!-- <p><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">My main goal for my career is to improve the lives of others by designing for accessibility, whether that is through a project that I am adding accessibility to or a project entirely focused on it. There are so many people excluded that need empathetic advocacy, and I aspire to be one of those voices.</span></p> -->
+            <!-- <a style="position: relative; left: 100; width: 280px; height: 56px" href="about-tldr.html"> -->
+                <!-- <div style="width: 280px; padding-top: 16px; padding-bottom: 16px; background: #262F34; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex"> -->
+                    <!-- <div style="color: white; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Full Story</div> -->
+                <!-- </div> -->
+            <!-- </a> -->
+
+        <!-- </div> -->
+        <!-- <img style="width: 380px; height: 361px; padding-left: 9%" src="https://beccawoo.github.io/images/about_picture.png" /> -->
+        <!-- </div> -->
+
+
+        <!-- <div style="left: auto; top: 184px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px"> -->
+        <!-- <div style="top: 547; position: relative; width: 996px; color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Here’s what I’m up to in my free time...</div> -->
+        <!-- <div style="left: 0px; top: 0.39px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex"> -->
+        <!-- </div> -->
+        <!-- <div style="left: auto; top: 586px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center"> -->
+        <!-- <div style="left: 150px; top: 756px; justify-content: flex-start; align-items: flex-start; gap: 69px; display: inline-flex"> -->
+            <!-- <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex"> -->
+                <!-- <img style="width: 322px; height: 266px" src="https://beccawoo.github.io/images/life_in_the_reef.jfif" /> -->
+                <!-- <div style="width: 322px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">“Life in the Reef” - Notan-style</div> -->
+                <!-- <a style="text-decoration: none" href="life-in-the-reef.html"><div style="width: 322px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; text-decoration: underline; word-wrap: break-word">See more here!</div></a> -->
+            <!-- </div> -->
+            <!-- <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex"> -->
+                <!-- <img style="width: 280px; height: 266px" src="https://beccawoo.github.io/images/faye.png" /> -->
+                <!-- <div style="width: 280px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">My chinchilla Faye is a sassy lady who adores her playtime.</div> -->
+            <!-- </div> -->
+            <!-- <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex"> -->
+                <!-- <img style="width: 241px; height: 266px" src="https://beccawoo.github.io/images/hibiscus.png" /> -->
+                <!-- <div style="width: 238px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">This is a hibiscus I drew from my digital art unit!</div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <include "include/footer.html">
+    <script>mobileCards()</script>
+    </body>
+</html>

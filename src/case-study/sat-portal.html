@@ -1,52 +1,43 @@
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <title>Case Study: SAT Portal - Becca Woo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
-  <style>
-    img {
-        max-width: 100%;
-        height: auto;
-        width: auto\9;
-    }
-  </style>
-  <include "include/header-style.html">
-</head>
-<body style = "margin:0">
-<div style="width: 100%; height: 100%; position: relative; background: white">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <title>SAT Portal - Becca Woo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
+    <link href='/include/header.css' rel='stylesheet'>
+    <link href='/include/footer.css' rel='stylesheet'>
+    <link href='/content.css' rel='stylesheet'>
+  </head>
+  <body>
+    <script src="/util.js"></script>
+    <script src="/cards.js"></script>
     <include "include/header.html">
-    <div style="left: auto; top: 184px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px">
-        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
-            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
-                <div><span style="color: black; font-size: 24px; font-family: Exo; font-style: italic; font-weight: 400; word-wrap: break-word">SAT Portal</span><span style="color: black; font-size: 24px; font-family: Exo; font-weight: 400; word-wrap: break-word">, UX Designer</span></div>
-                <div style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">AJ Tutoring, Apr 2023 - Present</div>
-            </div>
-            <div style="width: 580px"><span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">As the SAT has shifted to online, AJ needed a way to host their SAT practice tests on a portal where users can take tests and review past ones.<br/></span>
-                <span style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
-                    <ul style="list-style-type: disc; margin: auto; padding-top: 40px; padding-left: 40px; padding-right: 40px">
-                        <li style="">Solved a security and functionality issue which allowed users to impersonate other users.</li>
-                        <li style="">Improved practice SAT test time accuracy for hundreds of college-ready students.</li>
-                        <li style="">Added error handling with actionable feedback for users.</li>
-                    </ul>
-                </span></div>
-            <a href="https://docs.google.com/presentation/d/1ZRTN-7zf8nzNjvyL3r_4Oe0GoFlqsW8wAKUdUDac7wU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <div style="width: 280px; padding-left: 75px; padding-right: 75px; padding-top: 16px; padding-bottom: 16px; background: #262F34; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                <div style="color: white; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Full Case Study</div>
-                <div style="width: 24px; height: 24px; position: relative">
-                    <img src="https://beccawoo.github.io/images/open-in-new.svg">
-                </div>
-            </div></a>
+    <div class="content">
+      <div style="display: flex; gap: 3.12cqw">
+        <div>
+          <h2><i>SAT Portal Web Application</i>, UX Designer</h2>
+          AJ Tutoring, Apr 2023-Apr 2024
+          <br><br>
+          As the SAT has shifted to online, AJ needed a way to host their SAT practice tests on a portal where users can take tests and review past ones.
+          <ul>
+            <li>Solved a security and functionality issue which allowed users to impersonate other users.</li>
+            <li>Improved practice SAT test time accuracy for hundreds of college-ready students.</li>
+            <li>Added error handling with actionable feedback for users.</li>
+            <!-- continue adding bullet points as necessary... -->
+          </ul>
+          <br>
+          <a class="mainCTA" href="https://docs.google.com/presentation/d/1ZRTN-7zf8nzNjvyL3r_4Oe0GoFlqsW8wAKUdUDac7wU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Full Case Study<img src="/images/open-in-new.svg"></a>
         </div>
-        <img style="width: 580px; height: 433px;"
-         src="https://beccawoo.github.io/images/sat-portal.png" />
-    </div>
-    <div style="left: auto; top: 732px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left">
-      <div style="width: 780; height: 22; position: relative; color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">Take a look at other work I’ve done!</div>
-    <div style="left: auto; top: 49px; position: relative; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: center">
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="connect2grow.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_connect2grow.png" /></a></div>
-          <div style="display: inline-block"><a style="width: 380px; padding: 10px" href="magazine-ad.html"><img style="width: 380px; height: 380px" src="https://beccawoo.github.io/images/card_magazine-ad.png" /></a></div>
+        <img style="min-width: 29.69cqw; height: auto;" src="/images/sat-portal.png">
       </div>
+      <br style="display: block; margin-top: 7.8cqw">
+      <span class="bolded">Take a look at other work I've done! (You can scroll this &rarr;)</span>
+      <br><br>
+      <div class="cardCarousel" id="cardCarousel"></div>
     </div>
-</div>
-</body>
+    <include "include/footer.html">
+    <script>createCarousel()</script>
+    <script>mobileCards()</script>
+  </body>
+</html>

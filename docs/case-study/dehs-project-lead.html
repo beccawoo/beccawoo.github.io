@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-    <title>Homepage - Becca Woo</title>
+    <title>Case Study: DEHS Project Lead - Becca Woo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
     <link href='/include/header.css' rel='stylesheet'>
     <link href='/include/footer.css' rel='stylesheet'>
     <link href='/content.css' rel='stylesheet'>
@@ -78,12 +79,30 @@ if (isMobile()) {
 
 
     <div class="content">
-      <span class="bolded">UX Designer and Technical Writer centered on empathetic design, lifelong learning, and accessibility</span>
-      <br style="display: block; margin-top: 4.69cqw">
-      View my work below:
-      <br style="display: block; margin-top: 1.56cqw">
-      <div class="cardGrid" id="cardGrid">
+      <div style="display: flex; gap: 3.12cqw">
+        <div>
+          <h2><i>Design Explorers High School Internship</i>, Project Lead</h2>
+          BRIDGEGOOD, Jun-Jul 2024
+          <br><br>
+            BRIDGEGOOD is a non-profit organization driven to bridge the gaps for students and career pivoters. Spent 5 weeks to teach high school students about user experience.
+          <ul>
+            <li>Designed a 5-week user experience curriculum with meticulous documentation for future Project Leads to use for reference and guidance.</li>
+            <li>Taught industry tools such as Figma as well as deliverables such as case studies, creating a passion for user experience in the high school students.</li>
+            <li>Introduced students to sketchnotes, empathetic feedback, and personal branding on social media (according to their personal interests) which will be useful in their future careers.</li>
+            <!-- continue adding bullet points as necessary... -->
+          </ul>
+          <br>
+          <a class="mainCTA" href="https://docs.google.com/presentation/d/1o3Wy5-bvuwzHnq6KOSSJjBmAS231uW_4IktlRtxfE8o/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Documentation<img src="/images/open-in-new.svg"></a>
+        </div>
+        <video style="width: 29.69cqw; min-width:29.69cqw;" controls muted>
+      		  <source src="/images/dehs_project_lead.mp4" type="video/mp4">
+      		  Your browser does not support this video; so sorry for the inconvenience!
+  	    </video>
       </div>
+      <br style="display: block; margin-top: 7.8cqw">
+      <span class="bolded">Take a look at other work I've done! (You can scroll this &rarr;)</span>
+      <br><br>
+      <div class="cardCarousel" id="cardCarousel"></div>
     </div>
     <div class="footer" id="fullFooter">
   <hr>
@@ -163,7 +182,7 @@ if (isMobile()) {
 })()
 </script>
 
-    <script>createGrid()</script>
+    <script>createCarousel()</script>
     <script>mobileCards()</script>
   </body>
 </html>
