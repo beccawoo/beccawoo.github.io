@@ -1,16 +1,24 @@
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <title>About - TLDR - Becca Woo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
-  <link href='./include/header.css' rel='stylesheet'>
-</head>
-<body style = "margin:0">
-<div style="width: 100%; height: 250%; position: relative; background: white">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <title>About - TLDR - Becca Woo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
+    <link href='/include/header.css' rel='stylesheet'>
+    <link href='/include/footer.css' rel='stylesheet'>
+    <link href='/content.css' rel='stylesheet'>
+  </head>
+  <body>
+    <script src="/util.js"></script>
+    <script src="/cards.js"></script>
     <include "include/header.html">
-    <div style="left: auto; top: 246px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px">
-    <div style="width: 980px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+    <div class="content">
+      <div style="display: flex; gap: 1.56cqw">
+        <a href="/about.html"><img src="https://beccawoo.github.io/images/material-symbols_chevron-left-rounded.svg"></a>
+        <span class="bolded">The TL;DR story of Becca's Journey into UX</span>
+      </div>
+      <br>
         <p>I grew up in the Bay Area in a family of software engineers. My mom raised me in hopes I would become an engineer like her - but I was always more interested in art, expression, and human nature. I did take a course in Java during one summer (John Hopkins CTY Program), but while I was capable of writing code, I found myself having way more fun drawing the pictures that we used when we made a (very primitive) pong-style game. Inspired by two of my English teachers in freshman and sophomore year of high school, I decided to pursue English in the hopes of becoming a schoolteacher.</p>
         <br/>
         <p>At Purdue University, I declared as an English Education major, which is by all accounts equivalent to a double-major. Finding a passion for linguistics, I took a minor in that and did some research at the Indigenous and Endangered Languages Lab (IELLab) under one of my linguistics professors. During my last semester, in which I was supposed to student teach, I had the sudden clarity that I wasn't happy. I struggled as a classroom teacher because what I valued the most was the one-on-one help that I could give my students. Being a person of small stature, I discovered that trying to gently tell middle school students was not going to work. I felt that I had to resort to being mean to students in order to get any semblance of control - and I hated that. Worse still, I experienced what it was like to be unable to help students who were in need, due to the constraints and duties of a classroom teacher.</p>
@@ -26,17 +34,8 @@
         <p>To say this experience has changed my life is an understatement. I made a family: I found a community. I made dear friends like Dominique Stewart-Thomas, got a unique experience with working under pressure, and met so many amazing mentors who care so much about the future generations. </p>
         <br/>
         <p>I am so thrilled to be in this industry, and I can’t wait to help not only my future users but continue to encourage future generations of designers as well. I am actively seeking UX Design opportunities, so please feel free to reach out and chat with me!</p>
-    </div></div>
-    <div style="left: auto; top: 175px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left">
-        <!--<div style="left: 106px; top: 175px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">-->
-            <div style="position: relative; left: -24; top: -3; width: 24px; height: 24px; justify-content: center; align-items: center; display: flex">
-                <div style="width: 24px; height: 24px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-                    <a href="about.html"><img src="https://beccawoo.github.io/images/material-symbols_chevron-left-rounded.svg"></a>
-                </div>
-            </div>
-        <div style="width: 990px; display: inline-flex; justify-content: flex-start; align-items: flex-start">
-            <div style="color: black; font-size: 18px; font-family: Exo; font-weight: 700; word-wrap: break-word">The TL;DR story of Becca’s Journey into UX</div>
-        </div>
+      <br style="display: block; margin-top: 7.8cqw">
     </div>
-</div>
-</body>
+    <include "include/footer.html">
+  </body>
+</html>

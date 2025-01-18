@@ -1,5 +1,5 @@
 function resumeLink() {
-    return "/Becca_Woo-Resume-March_2024.pdf";
+    return "/Becca_Woo-Resume-Technical_Writing.pdf";
 }
 
 function getScreenSize() {

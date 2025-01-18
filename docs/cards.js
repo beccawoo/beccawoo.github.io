@@ -24,11 +24,11 @@ const CARDS = {
   "genre-analysis": createCard("/case-study/genre-analysis.html", "{0}-genre_analysis.png", "Genre Analysis", "Tech Writer", "September 2024"),
   "dehs-project-lead": createCard("/case-study/dehs-project-lead.html", "{0}-dehs_project_lead.png", "Project Lead, DEHS", "Project Lead, BRIDGEGOOD", "June-July 2024"),
   "sat-portal": createCard("/case-study/sat-portal.html", "{0}-sat_portal.png", "SAT Portal", "UX Designer", "April 2023-April 2024"),
-  "portfolio-audit": createCard("/case-study/portfolio-audit.html", "{0}-portfolio_audit.png", "Portfolio Audit", "UX Designer, Accessibility", "December 2024"),
+  "magazine-ad": createCard("/case-study/magazine-ad.html", "{0}-brand_ad.png", "Brand & Ad Design", "UX Designer", "January-February 2024"),
   "fcc-microsite": createCard("/case-study/fcc-microsite.html", "{0}-fcc.png", "FCC Microsite", "UX Designer", "September 2024"),
 };
 const HIDDEN_CARDS = {
-  "magazine-ad": createCard("/case-study/magazine-ad.html", "{0}-brand_ad.png", "Brand & Ad Design", "UX Designer", "January-February 2024"),
+  "portfolio-audit": createCard("/case-study/portfolio-audit.html", "{0}-portfolio_audit.png", "Portfolio Audit", "UX Designer, Accessibility", "December 2024"),
   "type-persona": createCard("/case-study/type-persona.html", "{0}-type_persona.png", "Type Persona", "UX Designer", "October 2024"),
 };
 
