@@ -1,12 +1,13 @@
-<div style="position: sticky; left: 0px; top: 0px; width: 100%; height: 128px; background: #D3EEE1; display: inline-flex">
-  <div style="left: 82px; padding: 82px; padding-top: 0px; padding-bottom: 0px; height: 128px; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-    <img style="width: 48px; height: 48px" src="/images/face_48x48.png" />
-    <ul class="buttonBox"><li class="topButton"><a class="buttonLink" href="/" style="font-size: 36px; font-family: Exo; font-weight: 400; word-wrap: break-word">Becca Woo</a></li></ul>
+<header id="headerBar">
+  <div class="home" id="homeLink">
+    <a id="headerImgLink" href="/" onclick=""><img id="headerImg" style="width: 100%" src="/images/face_48x48.png" /></a>
+    <ul class="buttonBox"><li class="topButton"><a id="headerBecca" class="buttonLink" href="/" onclick="" style="--selected: 0; font-size: 2.8cqw; font-family: Exo; font-weight: 400">Becca Woo</a></li></ul>
   </div>
   <div id="headerLinks">
+    <div id='menuDropdown' style='display: none;'>
+    </div>
   </div>
-</div>
-<script src="/util.js"></script>
+</header>
 <script>
 function openMenu() {
   var menu = document.getElementById("menuDropdown");
@@ -17,31 +18,47 @@ function openMenu() {
   }
 }
 
+function closeMenuIfOpen() {
+  var menu = document.getElementById("menuDropdown");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  }
+}
+
 (function() {
-const BUTTON_HOME = '<a class="buttonLink" href="/">Home</a>';
-const BUTTON_ABOUT = '<a class="buttonLink" href="/about.html">About</a>';
-const BUTTON_RESUME = '<a class="buttonLink" href="/Becca_Woo-Resume-March_2024.pdf">Resumé</a>';
-const BUTTON_CONTACT = '<a class="buttonLink" href="/contact.html">Contact</a>';
-var screenSize = getScreenSize();
-if (screenSize.width >= screenSize.height) {
+var url = window.location.href;
+var on_home = url.endsWith("beccawoo.github.io/") || url.includes("/index.html");
+var on_about = url.includes("/about.html");
+const BUTTON_HOME = `<a class="buttonLink" href="/" style="--selected: ${on_home ? 1 : 0};">Home</a>`;
+const BUTTON_ABOUT = `<a class="buttonLink" href="/about.html" style="--selected: ${on_about ? 1 : 0};">About</a>`;
+const BUTTON_RESUME = `<a class="buttonLink" href="${resumeLink()}" style="--selected: 0;" target="_blank" rel="noopener noreferrer">Resum&eacute;<img src="/images/open-in-new-black.svg" style="vertical-align: middle;"></a>`;
+const BUTTON_CONTACT = '<a class="buttonLink" href="/contact.html" style="--selected: 0;">Contact</a>';
+if (isMobile()) {
+  document.getElementById("menuDropdown").innerHTML = `
+    <ul class="buttonBox" style="position: relative; left: 9.8%">
+      <li>${BUTTON_HOME}</li>
+      <li>${BUTTON_ABOUT}</li>
+      <li>${BUTTON_RESUME}</li>
+    </ul>`;
+  document.getElementById("homeLink").style.left = "3%";
+  document.getElementById("headerImg").src = "/images/menu.svg";
+  var headerImgLink = document.getElementById("headerImgLink");
+  headerImgLink.href = "#";
+  headerImgLink.onclick = openMenu;
+  var headerBecca = document.getElementById("headerBecca");
+  headerBecca.href = "#";
+  headerBecca.onclick = openMenu;
+  window.onscroll = closeMenuIfOpen;
+} else {
   document.getElementById("headerLinks").innerHTML = `<ul class="buttonBox">
-      <div style="position: absolute; right: 82px; padding: 82px; padding-top: 0px; padding-bottom: 0px; justify-content: flex-start; align-items: center; gap: 32px; display: inline-flex">
+      <div style="position: absolute; right: 4.5%; padding-top: 0.665cqw; padding-bottom: 0px; width: 71%; justify-content: flex-end; align-items: center; gap: 2.2%; display: inline-flex;">
+        <li class="topButton">${BUTTON_HOME}</li>
         <li class="topButton">${BUTTON_ABOUT}</li>
         <li class="topButton">${BUTTON_RESUME}</li>
-        <li class="topButton">${BUTTON_CONTACT}</li>
       </div>
     </ul>`;
-} else {
-  document.getElementById("headerLinks").innerHTML = `<div style="position: absolute; right: 82px; padding-top:0px; padding-bottom: 0px">
-    <a href='javascript:void(0)' onclick='openMenu()'><img style="width: 48px; height: 48px" src="/images/" alt="Menu"></a>
-    <div id='menuDropdown' style='display: none;'>
-      <ul class="buttonBox">
-        <li>${BUTTON_ABOUT}</li>
-        <li>${BUTTON_RESUME}</li>
-        <li>${BUTTON_CONTACT}</li>
-      </ul>
-    </div>
-  </div>`;
+  document.getElementById("headerBar").style.display = "inline-flex";
+  document.getElementById("headerImg").src = "/images/face_48x48.png";
 }
 })()
 </script>

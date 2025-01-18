@@ -1,13 +1,47 @@
+header {
+  position: sticky; 
+  left: 0px; 
+  top: 0px; 
+  width: 100%; 
+  background: #D3EEE1; 
+  align-content: center;
+  padding-top: 5.5cqh;
+  padding-bottom: 5.5cqh;
+  z-index: 999;
+}
+
+#headerImgLink {
+  width: 19.2%
+}
+
+#menuDropdown {
+  background: #D3EEE1; 
+}
+
+.home {
+  left: 4.5%; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 8%; 
+  display: inline-flex; 
+  position: relative; 
+  width: 19.5%
+}
+
 .buttonLink {
   display: block;
   position: relative;
   padding: 0.2em 0;
   color: black;
   font-family: Exo;
-  font-size: 24px;
+  font-size: 1.87cqw;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .buttonLink::after {
@@ -32,7 +66,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .topButton {
@@ -41,7 +74,7 @@
 
 .topButton .buttonLink::after {
   opacity: 1;
-  transform: scale(0);
+  transform: scale(var(--selected));
   transform-origin: center;
 }
 

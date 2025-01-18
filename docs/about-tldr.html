@@ -4,77 +4,74 @@
   <title>About - TLDR - Becca Woo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
-  <style>
-    #buttonLink {
-      display: block;
-      position: relative;
-      padding: 0.2em 0;
-      color: black;
-      font-family: Exo;
-      font-size: 24px;
-      font-weight: 400;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    #buttonLink::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.1em;
-      background-color: #262F34;
-      opacity: 0;
-      transition: opacity 300ms, transform 300ms;
-    }
-
-    #buttonLink:hover::after,
-    #buttonLink:focus::after {
-      opacity: 1;
-      transform: translate3d(0, 0.2em, 0);
-    }
-
-    #buttonBox {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    
-    #topButton {
-      display: inline-block;
-    }
-    
-    #topButton #buttonLink::after {
-      opacity: 1;
-      transform: scale(0);
-      transform-origin: center;
-    }
-    
-    #topButton #buttonLink:hover::after,
-    #topButton #buttonLink:focus::after{
-      transform: scale(1);
-    }
-  </style>
-
-
+  <link href='./include/header.css' rel='stylesheet'>
 </head>
 <body style = "margin:0">
 <div style="width: 100%; height: 250%; position: relative; background: white">
-        <div style="left: 0px; top: 0px; width: 100%; height: 128px; background: #D3EEE1">
-          <div style="float: left; padding: 82px; padding-top: 0px; padding-bottom: 0px; height: 128px; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-              <img style="width: 48px; height: 48px" src="https://beccawoo.github.io/images/face_48x48.png" />
-              <ul id="buttonBox"><li id="topButton"><a id="buttonLink" href="https://beccawoo.github.io" style="font-size: 36px; font-family: Exo; font-weight: 400; word-wrap: break-word">Becca Woo</a></li></ul>
-          </div>
-          <ul id="buttonBox">
-            <div style="float: right; padding: 82px; height: 128px; padding-top: 0px; padding-bottom: 0px; justify-content: flex-start; align-items: center; gap: 32px; display: inline-flex">
-                <li id="topButton"><a id="buttonLink" href="https://beccawoo.github.io/about.html">About</a></li>
-                <li id="topButton"><a id="buttonLink" href="https://beccawoo.github.io/Becca_Woo-Resume-March_2024.pdf">Resumé</a></li>
-                <li id="topButton"><a id="buttonLink" href="https://beccawoo.github.io/contact.html">Contact</a></li>
-            </div>
-          </ul>
+    <header id="headerBar">
+  <div class="home" id="homeLink">
+    <a id="headerImgLink" href="/" onclick=""><img id="headerImg" style="width: 100%" src="/images/face_48x48.png" /></a>
+    <ul class="buttonBox"><li class="topButton"><a id="headerBecca" class="buttonLink" href="/" onclick="" style="--selected: 0; font-size: 2.8cqw; font-family: Exo; font-weight: 400">Becca Woo</a></li></ul>
+  </div>
+  <div id="headerLinks">
+    <div id='menuDropdown' style='display: none;'>
     </div>
+  </div>
+</header>
+<script>
+function openMenu() {
+  var menu = document.getElementById("menuDropdown");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+function closeMenuIfOpen() {
+  var menu = document.getElementById("menuDropdown");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  }
+}
+
+(function() {
+var url = window.location.href;
+var on_home = url.endsWith("beccawoo.github.io/") || url.includes("/index.html");
+var on_about = url.includes("/about.html");
+const BUTTON_HOME = `<a class="buttonLink" href="/" style="--selected: ${on_home ? 1 : 0};">Home</a>`;
+const BUTTON_ABOUT = `<a class="buttonLink" href="/about.html" style="--selected: ${on_about ? 1 : 0};">About</a>`;
+const BUTTON_RESUME = `<a class="buttonLink" href="${resumeLink()}" style="--selected: 0;" target="_blank" rel="noopener noreferrer">Resum&eacute;<img src="/images/open-in-new-black.svg" style="vertical-align: middle;"></a>`;
+const BUTTON_CONTACT = '<a class="buttonLink" href="/contact.html" style="--selected: 0;">Contact</a>';
+if (isMobile()) {
+  document.getElementById("menuDropdown").innerHTML = `
+    <ul class="buttonBox" style="position: relative; left: 9.8%">
+      <li>${BUTTON_HOME}</li>
+      <li>${BUTTON_ABOUT}</li>
+      <li>${BUTTON_RESUME}</li>
+    </ul>`;
+  document.getElementById("homeLink").style.left = "3%";
+  document.getElementById("headerImg").src = "/images/menu.svg";
+  var headerImgLink = document.getElementById("headerImgLink");
+  headerImgLink.href = "#";
+  headerImgLink.onclick = openMenu;
+  var headerBecca = document.getElementById("headerBecca");
+  headerBecca.href = "#";
+  headerBecca.onclick = openMenu;
+  window.onscroll = closeMenuIfOpen;
+} else {
+  document.getElementById("headerLinks").innerHTML = `<ul class="buttonBox">
+      <div style="position: absolute; right: 4.5%; padding-top: 0.665cqw; padding-bottom: 0px; width: 71%; justify-content: flex-end; align-items: center; gap: 2.2%; display: inline-flex;">
+        <li class="topButton">${BUTTON_HOME}</li>
+        <li class="topButton">${BUTTON_ABOUT}</li>
+        <li class="topButton">${BUTTON_RESUME}</li>
+      </div>
+    </ul>`;
+  document.getElementById("headerBar").style.display = "inline-flex";
+  document.getElementById("headerImg").src = "/images/face_48x48.png";
+}
+})()
+</script>
 
 
     <div style="left: auto; top: 246px; width: 100%; margin-left: auto; margin-right: auto; position: absolute; display: flex; justify-content: center; text-align: left; gap: 20px">

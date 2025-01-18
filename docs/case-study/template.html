@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <title>Homepage - Becca Woo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
+    <link href='/include/header.css' rel='stylesheet'>
+    <link href='/include/footer.css' rel='stylesheet'>
+    <link href='/content.css' rel='stylesheet'>
+  </head>
+  <body>
+    <script src="/util.js"></script>
+    <script src="/cards.js"></script>
+    <include "include/header.html">
+    <div class="content">
+      <div style="display: flex; gap: 3.12cqw">
+        <div>
+          <h2>TITLE</h2>
+          <br>
+          Company, Duration
+          <br><br><br>
+          Description describes the describee descriptively.
+          <ul>
+            <li>Bullet point 1</li>
+            <li>Bullet point 2</li>
+            <li>Bullet point 3</li>
+            <!-- continue adding bullet points as necessary... -->
+          </ul>
+          <br><br><br>
+          <a class="mainCTA" href="https://yourlinkhere.com/thisisyourlink">Full Case Study<img src="/images/open-in-new.svg"></a>
+        </div>
+        <img style="width: 29.69cqw; height: auto;" src="/images/about_picture.png">
+      </div>
+      <br style="display: block; margin-top: 7.8cqw">
+      <span class="bolded">Here's what I'm up to in my free time...</span>
+      <br><br>
+      <div class="cardCarousel" id="cardCarousel"></div>
+    </div>
+    <include "include/footer.html">
+    <script>createGrid()</script>
+    <script>mobileCards()</script>
+  </body>
+</html>

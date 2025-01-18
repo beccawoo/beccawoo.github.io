@@ -31,7 +31,7 @@ var on_home = url.endsWith("beccawoo.github.io/") || url.includes("/index.html")
 var on_about = url.includes("/about.html");
 const BUTTON_HOME = `<a class="buttonLink" href="/" style="--selected: ${on_home ? 1 : 0};">Home</a>`;
 const BUTTON_ABOUT = `<a class="buttonLink" href="/about.html" style="--selected: ${on_about ? 1 : 0};">About</a>`;
-const BUTTON_RESUME = `<a class="buttonLink" href="${resumeLink()}" style="--selected: 0;" target="_blank" rel="noopener noreferrer">Resumé<img src="/images/open-in-new-black.svg" style="vertical-align: middle;"></a>`;
+const BUTTON_RESUME = `<a class="buttonLink" href="${resumeLink()}" style="--selected: 0;" target="_blank" rel="noopener noreferrer">Resum&eacute;<img src="/images/open-in-new-black.svg" style="vertical-align: middle;"></a>`;
 const BUTTON_CONTACT = '<a class="buttonLink" href="/contact.html" style="--selected: 0;">Contact</a>';
 if (isMobile()) {
   document.getElementById("menuDropdown").innerHTML = `

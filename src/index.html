@@ -4,58 +4,24 @@
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
     <title>Homepage - Becca Woo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--   <link rel="shortcut icon" type="image/x-icon" href="icon.ico" /> ICON? -->
     <link href='/include/header.css' rel='stylesheet'>
     <link href='/include/footer.css' rel='stylesheet'>
     <link href='/content.css' rel='stylesheet'>
   </head>
   <body>
     <script src="/util.js"></script>
+    <script src="/cards.js"></script>
     <include "include/header.html">
     <div class="content">
-      <span class="bolded">UX Designer centered on empathetic design, lifelong learning, and accessibility</span>
+      <span class="bolded">UX Designer and Technical Writer centered on empathetic design, lifelong learning, and accessibility</span>
       <br style="display: block; margin-top: 4.69cqw">
       View my work below:
       <br style="display: block; margin-top: 1.56cqw">
-      <div class="cardGrid">
-        <a class="card" href="/">
-          <img src="/images/face_48x48.png">
-          <br style="display: block; margin-top: 0.78cqw">
-          <span class="project">SAT Portal</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="position">UX Designer</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="date">April 2023-April 2024</span>
-        </a>
-        <a class="card" href="/">
-          <img src="/images/face_48x48.png">
-          <br style="display: block; margin-top: 0.78cqw">
-          <span class="project">SAT Portal</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="position">UX Designer</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="date">April 2023-April 2024</span>
-        </a>
-        <a class="card" href="/">
-          <img src="/images/face_48x48.png">
-          <br style="display: block; margin-top: 0.78cqw">
-          <span class="project">SAT Portal</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="position">UX Designer</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="date">April 2023-April 2024</span>
-        </a>
-        <a class="card" href="/">
-          <img src="/images/face_48x48.png">
-          <br style="display: block; margin-top: 0.78cqw">
-          <span class="project">SAT Portal</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="position">UX Designer</span>
-          <br style="display: block; margin-top: 0.469cqw">
-          <span class="date">April 2023-April 2024</span>
-        </a>
+      <div class="cardGrid" id="cardGrid">
       </div>
     </div>
     <include "include/footer.html">
+    <script>createGrid()</script>
+    <script>mobileCards()</script>
   </body>
 </html>
