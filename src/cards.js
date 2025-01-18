@@ -42,7 +42,8 @@ function formatAndJoin(cards, prefix, join) {
 
 function createCarousel() {
   var url = window.location.href;
-  var pageId = url.split('/')[0].replace(".html", "");
+  var path = url.split('/');
+  var pageId = path[path.length - 1].replace(".html", "");
   var carousel = document.getElementById("cardCarousel");
   var pageCards = { ...CARDS };
   delete pageCards[pageId];

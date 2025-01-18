@@ -26,10 +26,11 @@ img {
   max-width: 100%;
   height: auto;
   width: auto;
+  object-fit: contain;
 }
   
 .mainCTA {
-  width: 27%;
+  width: 21.875cqw;
   height: 4.375cqw;
   position: relative;
   background: #262F34; 
