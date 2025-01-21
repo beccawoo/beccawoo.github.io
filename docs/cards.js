@@ -7,11 +7,8 @@ function sprintf(format) {
 
 const CARD_BOILERPLATE = '<a class="card" href="{0}"> \
   <img src="/images/{1}"> \
-  <br style="display: block; margin-top: 0.78cqw"> \
   <span class="project">{2}</span> \
-  <br style="display: block; margin-top: 0.469cqw"> \
   <span class="position">{3}</span> \
-  <br style="display: block; margin-top: 0.469cqw"> \
   <span class="date">{4}</span> \
 </a>';
 
